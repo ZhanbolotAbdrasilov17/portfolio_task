@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+* {
+    font-family: 'Ubuntu';
+    overflow-x: hidden;
+
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    height: 58px;
+    background: #19849B;
+
+    color: #FFFFFF;
+    padding-top: 10px;
+    font-weight: 700;
+
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+main{
+    width: 100%;
+    height: 180vh;
+    background: #272A2F;
+    padding-top: 51px;
+    padding-left: 227px;
+}
+
+.personal_info{
+    display: flex;
+    gap: 68px;
+}
+
+
+.info_text{
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.top_text{
+    margin-top: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+
+}
+
+.info_line{
+    width: 599px;
+    height: 4px;
+    background: #19849B;
+    margin-top: 14px;
+}
+
+.middle{
+    width: 559.07px;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.down_text{
+    width: 559px;
+
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+
+
+.contact{
+    width: 293px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+    background-color: #272A2F;
+}
+
+.title_profile{
+
+    margin-top: 104px;
+    font-weight: 700;
+    font-size: 24px;
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+.text_profile{
+    width: 766px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+    margin-top: 15px;
+}
+
+.pictures{
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 1021px;
+}
+
+img {
+    width: 240px;
+    height: 240px;
+    background-image: url();
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 35px;
+
+
+    background: #19849B;
+}
+
+.avatar {
+    background-image: url(./img/avatar.svg);
+    border-radius: 50%;
+    width: 94px;
+    height: 94px;
+}
+
+.for_text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.avatar_name{
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.avatar_number{
+    font-weight: 400;
+    font-size: 18px;
+
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.avatar_location{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+.footer_bottom {
+    width: 100%;
+    height: 10vh;
+    background-color: 
+    #16758A;
+    
+}
+
+.footer_bottom_text {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1%;
+}
