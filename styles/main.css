@@ -1,0 +1,282 @@
+main{
+    max-width: 100%;
+    height: 180vh;
+    background: #272A2F;
+    padding: 51px 0 76px 140px;
+}
+
+.info_img {
+    background-image: url(../img/Rectangle\ 2\ \(1\).svg);
+    width: 550px;
+    height: 355px;
+    /* background-size: cover; */
+    margin-right: 68px;
+    padding-right: 50px;
+    background-repeat: no-repeat;
+}
+
+.personal_info{
+    display: flex;
+}
+
+
+.info_text{
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.top_text{
+    margin-top: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+}
+
+.info_line{
+    width: 549px;
+    height: 4px;
+    background: #19849B;
+    margin-top: 14px;
+}
+
+.middle{
+    width: 559.07px;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.down_text{
+    width: 559px;
+
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+
+
+.contact{
+    width: 293px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+    background-color: #272A2F;
+}
+
+.contact:hover {
+    background-color: #19849B;
+    border: none;
+}
+
+.title_profile{
+
+    margin-top: 104px;
+    font-weight: 700;
+    font-size: 24px;
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+.text_profile{
+    width: 766px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+    margin-top: 15px;
+}
+
+.pictures{
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 1021px;
+
+}
+
+.img-portfolio {
+    width: 240px;
+    height: 240px;
+    background-image: url();
+    background-size: cover;
+
+
+}
+
+.img-portfolio:hover {
+    
+}
+
+.lupa {
+    background-image: url(../img/el_zoom-in.svg);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    /* display: none; */
+
+}
+
+.filter {
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(0deg, rgba(25, 132, 155, 0.5), rgba(25, 132, 155, 0.5)), url(.jpg);
+    position: relative;
+    display: none;
+
+} 
+
+.test {
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 1160px) {
+    .info_img {
+        width: 90%;
+        background-image: url(../img/Rectangle\ 2\ \(1\).png);
+        /* background-size: cover; */
+        /* background-position: 0% 60%; */
+        /* padding-bottom: 100px; */
+        margin-bottom: 65px;
+    }
+    main {
+        padding-left: 30vh;
+        height: calc(166vh - 5px);
+    }
+
+    .text_profile {
+        width: 83%;
+    }
+
+    .info_line {
+        width: 764px;
+    }
+
+    .personal_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-text {
+        /* font-size: 38px; */
+    }
+
+    .middle {
+        /* font-size: 26px; */
+        width: 82%;
+    }
+
+    .down_text {
+        width: 765px;
+        margin-bottom: 30px;
+    }
+
+    .pictures {
+        width: 943px;
+    }
+
+    .img-portfolio {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .filter {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media screen and (max-width: 962px){
+    main {
+        padding-left: 10%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 861px){
+    main {
+        padding-left: 4%;
+    }
+    
+}
+
+@media screen and (max-width: 820px) {
+    main {
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-bottom: 55px;
+    }
+    .down_text {
+        width: 95%;
+    }
+
+    .info_img {
+        background-image: url(../img/Rectangle\ 2\ \(1\).svg);
+        background-size: cover;
+        height: 600px;
+        margin-bottom: 62px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .info_line {
+        width: calc(96% + 16px);
+    }
+    .contact {
+        width: 100%;
+    }
+    .title_profile {
+        margin-top: 38px;
+    }
+    .img-portfolio {
+        width: 165px;
+        height: 165px;
+    }
+    .pictures {
+        width: 103%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .info_img {
+        background-size: contain;
+        height: 81vw;
+    }
+    
+
+    
+
+
+    
+}
