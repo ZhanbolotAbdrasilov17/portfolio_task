@@ -1,0 +1,174 @@
+main {
+  width: 100%;
+  padding: 51px;
+  height: fit-content;
+  background-color: #272A2F;
+}
+
+.biography {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 104px;
+}
+
+.main-avatar {
+  width: 411px;
+  height: 355px;
+  object-fit: cover;
+}
+
+.main-description {
+  width: 570px;
+
+}
+
+.main-description>h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.main-description>hr {
+  height: 4px;
+  background-color: #19849B;
+  border: none;
+  margin-top: 14px;
+  margin-bottom: 12px;
+}
+
+.text1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.text2 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+
+.contact {
+  width: 292px;
+  height: 50px;
+  padding: 10px 79px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* //////////////////////////////////////////////////// */
+.portfolio {}
+
+.portfolio>h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.portfolio>p {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+  width: 766px;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.images>img {
+  width: 244px;
+  height: 244px;
+  object-fit: cover;
+
+}
+
+@media screen and (max-width: 1120px) {
+  .biography {
+    justify-content: center;
+  }
+
+  .main-avatar {
+    width: 100%;
+    margin-bottom: 65px;
+  }
+
+  .main-description {
+    width: 100%;
+  }
+
+  .portfolio>p {
+    width: 100%;
+  }
+
+  .images {
+    gap: 15px;
+  }
+
+  .images>img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 830px) {  
+  .biography {
+    justify-content: center;
+  }
+
+  .main-avatar {
+    width: 100%;
+    margin-bottom: 65px;
+  }
+
+  .main-description {
+    width: 100%;
+  }
+
+  .portfolio>p {
+    width: 100%;
+  }
+
+  .images {
+    gap: 15px;
+  }
+
+  .images>img {
+    height: 165px;
+    width: 165px;
+  }
+  .contact{
+    width: 200px;
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+
+}
