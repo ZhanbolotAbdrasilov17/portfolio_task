@@ -1,0 +1,148 @@
+.contact-modal {
+  width: 70%;
+  height: auto;
+  padding: 23px 27px 49px 44px;
+  background-color: #272A2F;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  transition: 0.4s;
+}
+
+.contact-modal.fluenc {
+  transition: 0.4s;
+}
+
+.contact-modal > *:first-child {
+  align-self: flex-end;
+}
+
+.close-cross {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.contact-modal-text {
+  margin-bottom: 26px;
+}
+
+.contact-modal-text > *:first-child {
+  margin-bottom: 15px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+.contact-modal-text > *:last-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.form-inner {
+  width: 100%;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-inner > * {
+  padding: 16px 0 16px 16px;
+  border: none;
+  background-color: #324B53;
+}
+
+.form-inner input[type='text'] {
+  width: calc(25% - 20px);
+  height: 50px;
+  margin-right: 20px;
+}
+
+.form-inner input[type='email'] {
+  width: 75%;
+  height: 50px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 16px 22px;
+  border: none;
+  background-color: #324B53;
+
+  outline: none;
+  resize: none;
+}
+
+.send {
+  padding: 15px 31px;
+  border: 2px solid #fff;
+  background-color: transparent;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.overlay-contact {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.overlay-contact.open {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 900px) {
+  .form-inner {
+    display: block;
+  }
+
+  .form-inner input[type='text'] {
+    width: 100%;
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .form-inner input[type='email'] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-modal {
+    padding: 20px;
+  }
+}

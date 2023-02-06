@@ -1,114 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porfolio</title>
-  <link rel="stylesheet" href="./css/style.css">
- 
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
+  
   <header>
-    <h1>Lucas Montana</h1>
+    <a href="#">Lucas Montana</a>
   </header>
 
   <main>
-    <div class="container">
-
-      <div class="biography">
-        <img src="./img/Rectangle 2.png" alt="avatar" class="main-avatar">
-        <div class="main-description">
-          <h2>Hey. I'm Lucas </h2>
-          <h2>And I'm a professional photographer</h2>
-          <hr>
-          <p class="text1">Curabitur blanit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. </p>
-          <p class="text2">Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur
-            blandit tempus
-            porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligulas semper. Cum
-            sociis natoque penatibus et magnis maecenas. Donec ullamcorper nulla non metus auctor fringilla.
-          </p>
+    <div class="container main-inner">
+      <section class="author">
+        <div class="avatar">
+          <img src="./image/avatar.png">
+        </div>
+        <div class="introduce">
+          <h1 class="greeting">Hey. I'm Lucas <br> And I'm a professional photographer</h1>
+          <hr class="line">
+          <p class="introduce-primary">Curabitur blanit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus.</p>
+          <p class="introduce-secondary">Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligulas semper. Cum sociis natoque penatibus et magnis maecenas. Donec ullamcorper nulla non metus auctor fringilla. </p>
           <button class="contact">contact me</button>
         </div>
-      </div>
+      </section>
 
-      <div class="portfolio">
-        <h1>Portfolio</h1>
-        <p>Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus
-          porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-        <div class="images">
-      
+      <section class="portfolio">
+        <div class="portfolio-text">
+          <h1>Portfolio</h1>
+          <p>Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
         </div>
-      </div>
 
+        <div class="gallery"></div>
+      </section>
     </div>
   </main>
 
+
   <footer>
-    <div class="footer-info">
-      <img src="./img/Rectangle 2.png" alt="avatar" class="footer-avatar">
-      <div class="footer-contact-info">
-        <p class="name">Lucas Montana</p>
-        <p class="phone">+4 768 25 25 255</p>
-        <p class="country">Poland, Warsaw</p>
+    <div class="footer-top">
+      <div class="footer-top-inner">
+        <div class="avatar-logo">
+          <div class="photo"></div>
+        </div>
+        <div class="biometric-data">
+          <h1>Lucas Montana</h1>
+          <p>+4 768 25 25 255</p>
+          <p>Poland, Warsaw</p>
+        </div>
       </div>
     </div>
-
-    <div class="footer-rights">
+    <div class="footer-bottom">
       <p>All rights reserved. “World Photos”, Inc</p>
     </div>
   </footer>
 
+  <div class="overlay">
+    <div class="modal">
+      <button class="close">close</button>
+    </div>
+  </div>
 
-  
-
-
-  <div class="contact-overlay">
-
+  <div class="overlay-contact">
     <div class="contact-modal">
-
-      <p id="close-contact">✖</p>
-      <h1>Contact me</h1>
-      <p>Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus
-        porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-      <div class="contact-inputs">
-        <input type="text" name="name" id="input-name" placeholder="Your name...">
-        <input type="email" name="" id="input-email" placeholder="Your email...">
+      <button class="close-cross">
+        <img src="./image/cross.svg">
+      </button>
+      <div class="contact-modal-text">
+        <p>Contact me</p>
+        <p>Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
       </div>
-
-      <textarea name="" id="text-area" cols="30" rows="10">Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Fu blandit tempus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vollis  commodo luctus. Curabitur blandit. Morbi leo risus, porta ac consectetur ac, at eros.</textarea>
-      
-      <button class="contact-modal-button">Send message</button>
-
+      <div class="form">
+        <div class="form-inner">
+          <input type="text" placeholder="Your name...">
+          <input type="email" placeholder="Your email...">
+        </div>
+        <textarea name="blanket" id="textarea-blanket"></textarea>
+      </div>
+      <button class="send">Send message</button>
     </div>
-
   </div>
   
-  
-  <div class="picture-overlay">
 
-    <div class="picture-modal">
-
-      <button class="close-picture">close</button>
-    
-    
-    </div>
-
-  </div>
-
-
-
-
-
-  <script src="main.js"></script>
-
+  <script src="./main.js"></script>
 </body>
-
 </html>
-
